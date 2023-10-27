@@ -5,10 +5,11 @@ public class BankAccount {
     String name;
     double amount;
 
-    public void setAccount(int a, String n, double amt) {
+    public String setAccount(int a, String n, double amt) {
         acc_no = a;
         name = n;
         amount = amt;
+        return a + n + amt;
     }
 
     public double deposit(double amt) {
